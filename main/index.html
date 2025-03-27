@@ -54,8 +54,8 @@
         <p class="text-[14px] text-[#333]">Luis Fonsi Ft. Puerto Rican.</p>
         <audio
           src="/images/NEFFEX - Go!  [Copyright-Free] No.147.mp3"
-          controls
           type="mp3"
+          id="song"
         ></audio>
         <input type="range" value="0" name="" id="progress" />
         <div class="flex justify-center items-center">
@@ -76,9 +76,12 @@
             </svg>
           </div>
           <div
+            onclick="playPause()"
             class="size-[80px] m-5 bg-[#f53192] inline-flex items-center justify-center rounded-[50%] cursor-pointer shadow-[0_10px_20px_rgba(255,26,26,0.22)]"
           >
             <svg
+              class="fa-play"
+              id="play-btn"
               fill="#fff"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 384 512"
@@ -110,6 +113,6 @@
         </div>
       </div>
     </div>
-    
+    <script src="./script.js"></script>
   </body>
 </html>
